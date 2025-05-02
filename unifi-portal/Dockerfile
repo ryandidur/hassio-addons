@@ -1,7 +1,7 @@
 # Dockerfile for UniFi Captive Portal Add-on
 
-# Use a lightweight Python image as the base
-FROM python:3.9-slim
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
 # Set working directory
 WORKDIR /app
@@ -13,7 +13,7 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Expose port 80 for the web server
-EXPOSE 5000
+EXPOSE 80
 
 # Start the application
 CMD ["python", "app.py"]

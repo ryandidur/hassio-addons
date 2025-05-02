@@ -6,11 +6,14 @@
   "arch": ["armv7", "arm64", "amd64", "i386"],
   "startup": "application",
   "boot": "auto",
+  "ports": {
+    "80/tcp": 80
+  },
   "options": {
     "unifi_controller_url": "http://unifi-controller.local:8443",
     "unifi_username": "admin",
     "unifi_password": "password",
-    "web_server_port": 8080
+    "web_server_port": 80
   },
   "schema": {
     "unifi_controller_url": "str",
