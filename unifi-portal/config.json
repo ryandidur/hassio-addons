@@ -1,0 +1,19 @@
+{
+  "name": "UniFi Captive Portal",
+  "version": "1.0.0",
+  "slug": "unifi_captive_portal",
+  "description": "A custom add-on for Home Assistant to provide a captive portal for UniFi WiFi networks.",
+  "arch": ["armv7", "arm64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "unifi_controller_url": "http://unifi-controller.local:8443",
+    "unifi_username": "admin",
+    "unifi_password": "password"
+  },
+  "schema": {
+    "unifi_controller_url": "str",
+    "unifi_username": "str",
+    "unifi_password": "str"
+  }
+}
