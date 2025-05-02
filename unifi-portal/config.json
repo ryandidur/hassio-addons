@@ -1,7 +1,7 @@
 {
   "name": "UniFi Captive Portal",
   "version": "1.0.0",
-  "slug": "unifi_captive_portal",
+  "slug": "unifi-portal",
   "description": "A custom add-on for Home Assistant to provide a captive portal for UniFi WiFi networks.",
   "arch": ["armv7", "arm64", "amd64", "i386"],
   "startup": "application",

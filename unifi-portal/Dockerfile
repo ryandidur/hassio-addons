@@ -13,7 +13,7 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Expose port 80 for the web server
-EXPOSE 80
+EXPOSE 5000
 
 # Start the application
 CMD ["python", "app.py"]
