@@ -9,11 +9,13 @@
   "options": {
     "unifi_controller_url": "http://unifi-controller.local:8443",
     "unifi_username": "admin",
-    "unifi_password": "password"
+    "unifi_password": "password",
+    "web_server_port": 8080
   },
   "schema": {
     "unifi_controller_url": "str",
     "unifi_username": "str",
-    "unifi_password": "str"
+    "unifi_password": "str",
+    "web_server_port": "int"
   }
 }
